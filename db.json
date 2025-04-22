@@ -1,0 +1,177 @@
+{
+  "seller": [
+    {
+      "id": "e94f",
+      "name": "Vivek dudhatra",
+      "email": "vivek@test.com",
+      "password": "13131313"
+    },
+    {
+      "id": "da2c",
+      "name": "Vivek",
+      "email": "vivekdudhatra13@gmail.com",
+      "password": "13082004"
+    },
+    {
+      "id": "fc67",
+      "name": "Vivek Dudhatra",
+      "email": "yashramani123@gmail.com",
+      "password": "16102003"
+    },
+    {
+      "id": "ad78",
+      "name": "Vivek Dudhatra",
+      "email": "vivekdudhatra@gmail.com",
+      "password": "16161616"
+    }
+  ],
+  "book": [
+    {
+      "name": "Pretty Little Wife",
+      "url": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1601939668i/53441185.jpg",
+      "price": 5000,
+      "category": "Thriller",
+      "pdfURL": "https://www.goodreads.com/book/show/53441185-pretty-little-wife",
+      "auther": "Darby Kane",
+      "description": "Lila Ridgefield lives in an idyllic college town, but not everything is what it seems. Lila isn’t what she seems. A student vanished months ago. Now, Lila’s husband, Aaron, is also missing. ",
+      "id": "7ed6"
+    },
+    {
+      "name": "What Should Be Wild",
+      "url": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1514421070i/35068762.jpg",
+      "price": 999,
+      "category": "Fiction",
+      "pdfURL": "https://www.goodreads.com/book/show/35068762-what-should-be-wild",
+      "auther": "Julia Fine",
+      "description": "In this darkly funny, striking debut, a highly unusual young woman must venture into the woods at the edge of her home to remove a curse that has plagued the women in her family for millennia—an utterly original novel with all the mesmerizing power of The Tiger’s Wife, The Snow Child, and Swamplandia!",
+      "id": "f24a"
+    },
+    {
+      "id": "e49d",
+      "name": "Queen of the Conquered",
+      "url": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1558621776i/44286509.jpg",
+      "price": 699,
+      "category": "Historical",
+      "pdfURL": "https://www.goodreads.com/book/show/44286509-queen-of-the-conquered",
+      "auther": "Kacen Callender",
+      "description": "An ambitious young woman with the power to control minds seeks vengeance against the royals who murdered her family, in a Caribbean-inspired fantasy world embattled by colonial oppression.\n"
+    },
+    {
+      "id": "c6ea",
+      "name": "The Way",
+      "url": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1714096308i/205900986.jpg",
+      "price": 999,
+      "category": "Science Fiction",
+      "pdfURL": "https://www.goodreads.com/book/show/205900986-the-way",
+      "auther": "Cary Groner",
+      "description": "The world has been ravaged by a lethal virus and, with few exceptions, only the young have survived. Cities and infrastructures have been destroyed, and the natural world has reclaimed the landscape in surprising ways."
+    }
+  ],
+  "user": [
+    {
+      "id": "0203",
+      "name": "Vvv",
+      "email": "vivekdudhatra13@gmail.com",
+      "password": "13131313"
+    },
+    {
+      "id": "085d",
+      "name": "Vivek Dudhatra",
+      "email": "vivekdudhatra13@gmail.com",
+      "password": "10101010"
+    },
+    {
+      "id": "78dd",
+      "name": "hhhh",
+      "email": "123@abc.com",
+      "password": "13082004"
+    }
+  ],
+  "cart": [],
+  "order": [
+    {
+      "id": "36fa",
+      "fName": "Vivek",
+      "lName": "Dudhatra",
+      "mNumber": 1234567890,
+      "city": "Vadodara",
+      "state": "Gujarat",
+      "zipCode": "390009",
+      "adress": "Hello",
+      "totalPrice": 16829.2,
+      "userId": "78dd"
+    },
+    {
+      "id": "b1de",
+      "fName": "Vivek",
+      "lName": "Dudhatra",
+      "mNumber": 9909,
+      "city": "Vadodara",
+      "state": "Gujarat",
+      "zipCode": "390009",
+      "adress": "Hey!",
+      "totalPrice": 5494.6,
+      "userId": "78dd"
+    },
+    {
+      "id": "6bb6",
+      "fName": "",
+      "lName": "",
+      "mNumber": "",
+      "city": "",
+      "state": "",
+      "zipCode": "",
+      "adress": "",
+      "totalPrice": 10900,
+      "userId": "085d"
+    },
+    {
+      "id": "664a",
+      "fName": "",
+      "lName": "",
+      "mNumber": "",
+      "city": "",
+      "state": "",
+      "zipCode": "",
+      "adress": "",
+      "totalPrice": 5500,
+      "userId": "085d"
+    },
+    {
+      "id": "9325",
+      "fName": "",
+      "lName": "",
+      "mNumber": "",
+      "city": "",
+      "state": "",
+      "zipCode": "",
+      "adress": "",
+      "totalPrice": 5500,
+      "userId": "085d"
+    },
+    {
+      "id": "d0c6",
+      "fName": "",
+      "lName": "",
+      "mNumber": "",
+      "city": "",
+      "state": "",
+      "zipCode": "",
+      "adress": "",
+      "totalPrice": 5500,
+      "userId": "085d"
+    },
+    {
+      "id": "fdd2",
+      "fName": "",
+      "lName": "",
+      "mNumber": "",
+      "city": "",
+      "state": "",
+      "zipCode": "",
+      "adress": "",
+      "totalPrice": 10900,
+      "userId": "0203"
+    }
+  ]
+}

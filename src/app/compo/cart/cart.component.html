@@ -1,0 +1,75 @@
+<h1>Shopping Cart</h1>
+@if (orederMsg) {
+<div class="info">
+  <h3>{{noOrderMsg}}</h3>
+  <h4 routerLink="/">{{noOrderMsg2}}</h4>
+</div>
+}
+@else {
+<div class="container">
+  <div class="cart-items">
+    <h3>Cart ({{cartData?.length}})</h3>
+
+    @for (item of cartData; track $index) {
+
+    <div class="cart-item">
+      <img src="{{item.url}}">
+      <div class="cart-item-details">
+        <h3>{{item.name}}</h3>
+        <p>{{item.auther}}</p>
+        <p>Price: {{item.price}}</p>
+        <p>Category: {{item.category}}</p>
+      </div>
+      <div class="cart-item-actions">
+        <button (click)="quantityMinus(item.bookId)">-</button>
+        <span>{{item.quantity}}</span>
+        <button (click)="quantityPlus(item.bookId)">+</button>
+        <button class="buttons" (click)="removeToCart(item.id)">Remove Item</button>
+      </div>
+      @if(item.quantity){
+      <p>{{item.price * item.quantity | currency: 'INR'}}</p>
+      }
+    </div>
+    }
+
+
+    <!-- <div class="cart-item">
+        <img src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1696110289i/199239243.jpg" alt="White Hoodie">
+        <div class="cart-item-details">
+          <h3>White Hoodie</h3>
+          <p>Hoodie W</p>
+          <p>Color: White</p>
+          <p>Size: M</p>
+        </div>
+        <div class="cart-item-actions">
+          <button>-</button>
+          <span>0</span>
+          <button>+</button>
+          <button class="buttons">Remove Item</button>
+        </div>
+        <p>$19.99</p>
+      </div> -->
+
+  </div>
+
+  <div class="cart-total">
+    <div class="cart-total-item">
+      <span>Temporary amount:</span> {{priceSummary.price | currency:'INR'}}
+    </div>
+    <div class="cart-total-item">
+      <span>Shipping:</span> {{priceSummary.shipping | currency:'INR'}}
+    </div>
+    <div class="cart-total-item">
+      <span>Tax 18%:</span> {{priceSummary.tax | currency:'INR'}}
+    </div>
+    <div class="cart-total-item">
+      <span>Discount 10%:</span>- {{priceSummary.discount | currency:'INR'}}
+    </div>
+    <div class="cart-total-item">
+      <span>The total amount is:</span> {{priceSummary.total | currency:'INR'}}
+    </div>
+    <button class="buttons" routerLink="/check-out">Go To Checkout</button>
+  </div>
+</div>
+
+}

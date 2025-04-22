@@ -1,0 +1,151 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 3rem;
+}
+
+
+.card{
+    width: 25%;
+    height: auto;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    border-radius: 20px;
+    gap: 1rem;
+}
+
+.card h2{
+  margin-bottom: 30px;
+  color: blueviolet;
+}
+
+.card h5{
+  color: #ff007d;
+  font-weight: 500;
+  margin-top: 0px;
+  margin-bottom: -12px;
+}
+
+.card a.fp{
+  width: 100%;
+  display: flex;
+  color: #5881D0;
+}
+
+.login_register{
+  display: flex;
+  width: 100%;
+  border: 1px solid blueviolet;
+  border-radius: 15px;
+  justify-content: center;
+  margin: 20px 0;
+  color: blueviolet;
+}
+
+.login_register a{
+  font-size: 1em;
+  padding: auto;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border: none;
+  width: 50%;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+
+.login_register a.login{
+  border-radius: 15px;
+  background-color: transparent;
+  cursor: pointer;
+  /* color: black; */
+}
+
+.login_register a.register{
+  border-radius: 15px;
+  background: linear-gradient(90deg, rgb(151, 66, 231), blueviolet);
+  color: white;
+}
+.login_register a.login:hover{
+  transform: scale(1.06);
+  cursor: pointer;
+}
+
+.form{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 1rem;
+  color: blueviolet;
+}
+
+.form input{
+  padding: 10px;
+  padding-left: 13px;
+  padding-bottom: 13px;
+  border-radius: 2px;
+  border: 1px solid blueviolet;
+  border-left: 0;
+  border-right: 0;
+  border-top: 0;
+  color: blueviolet;
+  cursor: pointer;
+  font-family: "Roboto Mono", sans-serif;
+  box-shadow: 0px -5px 9px rgba(211, 211, 211, .7) inset;
+}
+
+.form p {
+  margin-top: -20px;
+    margin-bottom: -1px;
+    padding-left: 5px;  
+}
+
+.form input.email{
+  margin-bottom: 15px;
+}
+
+.form input.pass{
+  margin-bottom: 15px;
+}
+
+.form input.comfirm_pass{
+  margin-bottom: 5px;
+}
+
+.form input:focus{
+    outline: none;
+    transform: scale(1.04);
+    transition: ease-in;
+}
+
+.login_btn{
+  font-size: 20px;
+  color: white;
+  border-radius: 15px;
+  border: none;
+  background-color: blueviolet;
+  /* width: 100%; */
+  padding: 10px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  /* background: linear-gradient(-90deg, #003A74, #006AD5); */
+  box-shadow: 1px 5px 9px rgba(211, 211, 211, .9);
+  cursor: pointer;
+}
+
+.login_btn:disabled{
+  cursor: not-allowed;
+}
+
+.login_btn:hover{
+    transform: scale(1.02);
+}

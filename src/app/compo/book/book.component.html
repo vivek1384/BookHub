@@ -1,0 +1,27 @@
+<div class="book-container">
+    <div class="book-image">
+      <img src="{{bookObg?.url}}" >
+    </div>
+    <div class="book-details">
+      <h1>{{bookObg?.name}}</h1>
+      <h2>{{ bookObg?.auther }}</h2>
+      <p>{{ bookObg?.description }}</p>
+      <p><strong>Category:</strong> {{ bookObg?.category }}</p>
+      <p><strong>Price:</strong> ₹ {{ bookObg?.price }}</p>
+      <div class="item-number">
+        <button class="buttons" (click)="decrement()">-</button>
+        <p>{{counter}}</p>
+        <button class="buttons" (click)="increment()">+</button>
+      </div>
+  
+      <!-- <button >Download PDF</button> -->
+       @if(showRemovecart){
+         <button (click)="removeToCart(bookObg?.id)">Remove to Cart</button>
+       }@else{
+         <button (click)="addToCart()">Add to Cart</button>
+       }
+      <button>Buy Now</button>
+    </div>
+  </div>
+
+  

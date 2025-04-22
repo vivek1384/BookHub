@@ -1,0 +1,36 @@
+<div class="container">
+
+    <div class="step-container">
+        <div class="step active">
+            <div class="step-title">Shipping</div>
+            <div class="step-description">Enter your shipping address.</div>
+        </div>
+
+
+    </div>
+    <form #adress="ngForm" (ngSubmit)="paymentButton(adress.value)">
+        <div>
+            <input ngModel name="fName" type="text" placeholder="Enter First Name" class="pass">
+            <input ngModel name="lName" type="text" placeholder="Enter Last Name" class="pass">
+        </div>
+
+        <div>
+            <input ngModel name="mNumber" type="number" placeholder="Enter Mobile Number" class="pass">
+            <input ngModel name="city" type="text" placeholder="Enter Your City" class="pass">
+        </div>
+
+        <div>
+            <input ngModel name="state" type="text" placeholder="Enter Your State" class="pass" />
+            <input ngModel name="zipCode" type="text" placeholder="Enter Postal Code" class="pass" />
+        </div>
+        <div>
+            <textarea type="text" ngModel name="adress" maxlength="310" placeholder="Enter Full Adress" class="pass"
+                rows="4">
+            </textarea>
+        </div>
+
+        <button type="ngSubmit" class="login_btn">Order of {{priceSummary.total | currency : 'INR'}}</button>
+    </form>
+
+
+</div>

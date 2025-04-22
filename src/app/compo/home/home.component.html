@@ -1,0 +1,49 @@
+<div class="carousel">
+  <div class="carousel-inner" [ngStyle]="{'transform': 'translateX(-' + currentIndex * 100 + '%)'}">
+    @for (item of bookHeader; track $index) {
+    <div class="carousel-item">
+      <div class="item-container">
+
+        <img [src]="item.url" routerLink="/book-details/{{item.id}}" alt="Image">
+        <div class="item-info">
+          <h1>{{ item.name }}</h1>
+          <h3>{{item.auther}}</h3>
+          <p>{{ item.description }}</p>
+          <p class="price">{{item.price | currency: 'INR'}}</p>
+          <div class="actions">
+            <p class="geners">Geners: {{item.category}}</p>
+            <button routerLink="/book-details/{{item.id}}">View Details</button>
+            <button routerLink="/book-details/{{item.id}}">Add To Cart</button>
+          </div>
+        </div>
+      </div>
+    </div>}
+  </div>
+  <!-- <button (click)="prev()" class="prev-btn"><</button> -->
+  <button (click)="next()" class="next-btn"><fa-icon [icon]="icon"></fa-icon></button>
+</div>
+
+<div>
+  <div class="card">
+    @for (item of bookGrid; track $index ) {
+    <div class="product-card">
+        <img routerLink="/book-details/{{item.id}}" src={{item.url}} alt="">
+        <h4>{{item.name}}</h4>
+        <p>{{item.auther}}</p>
+        <div>
+            <span>{{ item.price | currency:'INR' }}</span>
+        </div>
+        <div class="buttons">
+            <button routerLink="/book-details/{{item.id}}">
+                <!-- <fa-icon [icon]="edit"></fa-icon> -->
+                 Add to Cart
+                </button>
+            <button routerLink="/book-details/{{item.id}}">
+                <!-- <fa-icon [icon]="delete"></fa-icon> -->
+                 View Details
+                </button>
+        </div>
+    </div>
+    }
+</div>
+</div>

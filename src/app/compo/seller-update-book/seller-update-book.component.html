@@ -1,0 +1,28 @@
+<div class="addnew">
+    <h1>Update Book</h1>
+    <h6></h6>
+    <form action="" #updateBook="ngForm" (ngSubmit)="submit(updateBook.value)" >
+
+
+            <div>
+                <input type="text" ngModel name="name" ngModel={{bookObg?.name}} placeholder="Enter Book Name" class="pass">
+                <input type="text" ngModel name="url" ngModel={{bookObg?.url}} placeholder="Enter Book Image URL" class="pass">
+            </div>
+    
+            <div>
+                <input type="number" ngModel name="price" placeholder="Enter Book Price" ngModel={{bookObg?.price}} class="pass">
+                <input type="text" ngModel name="category" placeholder="Enter Book Category" ngModel={{bookObg?.category}} class="pass">
+            </div>
+    
+            <div>
+                <input type="text" name="pdfURL" ngModel placeholder="Enter Book PDF URL" ngModel="{{bookObg?.pdfURL}}" class="pass" rows="6" />
+                <input type="text" name="auther" ngModel placeholder="Enter Book Authar Name" ngModel={{bookObg?.auther}} class="pass" rows="6" />
+            </div>
+            <div>
+                <textarea type="text" name="description" ngModel placeholder="Enter Book Authar Name" ngModel={{bookObg?.description}} class="pass" rows="4" ></textarea>
+                
+            </div>
+
+        <button class="login_btn">Update Book</button>
+    </form>
+</div>

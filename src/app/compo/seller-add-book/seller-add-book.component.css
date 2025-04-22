@@ -1,0 +1,87 @@
+.addnew {
+    color: blueviolet;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2.5rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.7rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.addnew h6{
+    color: #2ca11b;
+    font-size: 14px;
+    margin-top: -1rem;
+    margin-bottom: -1rem;
+}
+form div{
+    display: flex;
+    gap: 1rem;
+}
+
+form input {
+    min-width: 500px;
+    padding: 10px;
+    padding-left: 13px;
+    padding-bottom: 11px;
+    border-radius: 2px;
+    border: 1px solid blueviolet;
+    border-left: 0;
+    border-right: 0;
+    border-top: 0;
+    color: blueviolet;
+    cursor: pointer;
+    font-family: "Roboto Mono", sans-serif;
+    box-shadow: 0px -5px 9px rgba(211, 211, 211, .7) inset;
+    margin-bottom: 15px;
+}
+
+form textarea{
+    min-width: 1052px;
+    padding: 10px;
+    padding-left: 13px;
+    padding-bottom: 11px;
+    border-radius: 2px;
+    border: 1px solid blueviolet;
+    border-left: 0;
+    border-right: 0;
+    border-top: 0;
+    color: blueviolet;
+    cursor: pointer;
+    font-family: "Roboto Mono", sans-serif;
+    box-shadow: 0px -5px 9px rgba(211, 211, 211, .7) inset;
+    margin-bottom: 15px;
+}
+
+form input:focus, textarea:focus {
+    outline: none;
+    transform: scale(1.04);
+}
+
+
+.login_btn {
+    min-width: 520px;
+    font-size: 20px;
+    color: white;
+    border-radius: 15px;
+    border: none;
+    background-color: blueviolet;
+    /* width: 100%; */
+    padding: 10px;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    /* background: linear-gradient(-90deg, #003A74, #006AD5); */
+    box-shadow: 1px 5px 9px rgba(211, 211, 211, .9);
+    cursor: pointer;
+}
+
+.login_btn:hover {
+    transform: scale(1.05);
+}

@@ -1,0 +1,25 @@
+<div class="addnew">
+    <h1>Add New Book</h1>
+    <form action="" (ngSubmit)="addNewbook(addNewBook.value)" #addNewBook="ngForm">
+        <div>
+            <input type="text" ngModel name="name" placeholder="Enter Book Name" class="pass">
+            <input type="text" ngModel name="url" placeholder="Enter Book Image URL" class="pass">
+        </div>
+
+        <div>
+            <input type="number" ngModel name="price" placeholder="Enter Book Price" class="pass">
+            <input type="text" ngModel name="category" placeholder="Enter Book Category" class="pass">
+        </div>
+
+        <div>
+            <input type="text" name="pdfURL" ngModel placeholder="Enter Book PDF URL" class="pass" rows="6" />
+            <input type="text" name="auther" ngModel placeholder="Enter Book Authar Name" class="pass" rows="6" />
+        </div>
+        <div>
+            <textarea type="text" name="description" maxlength="310" ngModel placeholder="Enter Book Description" class="pass" rows="4" ></textarea>
+            
+        </div>
+
+        <button class="login_btn">Add Book</button>
+    </form>
+</div>

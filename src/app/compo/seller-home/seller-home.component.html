@@ -1,0 +1,20 @@
+<div class="card">
+    @for (item of bookList; track $index) {
+    <div class="product-card">
+        <img src={{item.url}} alt="">
+        <h4>{{item.name}}</h4>
+        <p>{{item.auther}}</p>
+        <div>
+            <span>{{ item.price | currency:'INR' }}</span>
+        </div>
+        <div class="buttons">
+            <button routerLink="/seller-update-book/{{item.id}}"  (click)="onEdit(item.id)">
+                <fa-icon [icon]="edit"></fa-icon>
+                </button>
+            <button (click)="onDelete(item.id)">
+                <fa-icon [icon]="delete"></fa-icon>
+                </button>
+        </div>
+    </div>
+    }
+</div>

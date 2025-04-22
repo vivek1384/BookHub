@@ -1,0 +1,92 @@
+nav {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
+
+svg path {
+    fill: transparent;
+    stroke-width: 0;
+    stroke: blueviolet;
+    /* stroke-dasharray: 200;
+    stroke-dashoffset: 200; */
+    animation: textAnimation 2s ease-in-out 1 forwards;
+}
+
+@keyframes textAnimation {
+    0% {
+        fill: transparent;
+        /* stroke-dashoffset: 50; */
+    }
+
+    /* 80% {
+        fill: transparent;
+    } */
+
+    100% {
+        fill: blueviolet;
+    }
+}
+
+nav h1 {
+    margin: 8px;
+    color: blueviolet;
+    font-size: 30px;
+    font-weight: 900;
+    cursor: pointer;
+}
+
+nav ul {
+    display: inline-flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    padding-left: 15px;
+    padding-top: 15px;
+}
+
+nav a {
+    cursor: pointer;
+    text-decoration: none;
+    color: blueviolet;
+}
+
+nav .search input {
+    flex: 1;
+    color: blueviolet;
+    height: 22px;
+    border: 1px solid blueviolet;
+    border-right: 0;
+    padding: 5px;
+    outline: none;
+}
+
+nav .search button {
+    color: blueviolet;
+    border: 1px solid blueviolet;
+    height: 34px;
+    padding: 5px;
+    border-left: 0;
+
+}
+
+nav .search {
+    margin-top: 10px;
+    flex: 1;
+    display: flex;
+    margin-left: 5%;
+    margin-right: 5%;
+    text-shadow: 0px 0px 10px blueviolet;
+}
+
+nav .search p {
+    color: black;
+}
+
+nav .search ::placeholder{
+    color: blueviolet;
+    opacity: 0.6;
+}

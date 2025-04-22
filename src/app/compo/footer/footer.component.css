@@ -1,0 +1,122 @@
+.site-footer {
+    margin-top: 50px;
+    background-color: rgb(255, 250, 250); /* Brown background */
+    color: blueviolet; /* Light beige text */
+    padding: 26px;
+    box-sizing: border-box;
+    min-height: 300px;
+    display: flex;
+    justify-content: center;
+}
+
+svg path {
+  fill: transparent;
+  stroke-width: 0;
+  stroke: blueviolet;
+  /* stroke-dasharray: 200;
+  stroke-dashoffset: 200; */
+  animation: textAnimation 2s ease-in-out 1 forwards;
+}
+
+@keyframes textAnimation {
+  0% {
+      fill: transparent;
+      /* stroke-dashoffset: 50; */
+  }
+
+  /* 80% {
+      fill: transparent;
+  } */
+
+  100% {
+      fill: blueviolet;
+  }
+}
+
+.footer-content {
+    width: 100%;
+    max-width: 1200px; /* Adjust max-width to center the content nicely */
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; /* Three equal columns */
+    gap: 30px; /* Increase space between columns */
+    align-items: center;
+}
+
+.footer-logo {
+  width: 100px;
+    height: auto;
+    fill: blueviolet; /* White fill for the logo */
+}
+
+.footer-info {
+    max-width: 100%;
+}
+
+.footer-business-name {
+    font-size: 18px !important;
+  letter-spacing:3px;
+    font-weight: 600;
+  text-transform:uppercase;
+    margin-bottom: 10px;
+}
+
+.footer-business-address,
+.footer-business-phone {
+    font-size: 16px;
+    margin: 5px 0;
+    line-height: 1.5;
+  letter-spacing:1px;
+}
+
+.footer-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+
+.footer-nav li {
+    margin-right: 15px;
+    margin-bottom: 10px;
+}
+
+.footer-nav a {
+    color: blueviolet;
+    text-decoration: none;
+    font-size: 15px;
+    transition: color 0.3s ease;
+  letter-spacing:2px;
+  text-transform:uppercase;
+  cursor: pointer;
+}
+
+.footer-nav a:hover {
+    color: rgb(162, 78, 241); /* Lightened color on hover */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .footer-content {
+        grid-template-columns: 1fr; /* Stack columns vertically on small screens */
+        text-align: center;
+      transform:scale(0.90);
+    }
+
+    .footer-nav ul {
+        justify-content: center;
+    }
+}
+
+body {
+  background: white;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+
+}

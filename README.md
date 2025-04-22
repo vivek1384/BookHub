@@ -1,4 +1,4 @@
-# BookHUb
+# BookHub
 
 ## Development server
 

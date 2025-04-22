@@ -1,4 +1,4 @@
-# ECommerce
+# BookHUb
 
 ## Development server
 
